@@ -4,7 +4,7 @@ CREATE TABLE Authors(
 )
 
 
-CREATE Table IF NOT EXISTS Books(
+CREATE Table  Books(
     book_id INT PRIMARY KEY,
     title VARCHAR(130),
     author_id(Foreign Key (author_id) REFERENCES Authors (author_id)), 
